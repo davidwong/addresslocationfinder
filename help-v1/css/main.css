@@ -1,0 +1,828 @@
+html, body { height: 100%; }
+body {
+	background: #000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	letter-spacing: 1px;
+	-webkit-text-size-adjust: none;
+}
+ul { list-style: none; }
+a { color: #fff; text-decoration: none; }
+	.dim a { color: #666; }
+.clear { clear: both; font-size: 0; height: 0; line-height: 0; overflow: hidden; }
+
+p.error { color: red !important; }
+input.error, textarea.error { background-color: red !important; }
+
+#wrapper {
+	margin: 0 auto 0;
+	min-height: 100%;
+	overflow: hidden;
+	width: 640px;
+}
+
+/* ==========
+	Header
+========== */
+header#omni-header {
+	background: url('../images2/header-bg.png') no-repeat top center;
+		-webkit-background-size: 100% 100px;
+	height: 100px;
+	position: relative;
+}
+
+/* ==========
+	Global generic nav/menu styles
+========== */
+nav ul li {
+	width: 100%;
+}
+	nav ul li a {
+		display: block;
+	}
+		nav ul li:nth-of-type(1) a {
+		}
+		nav ul li a > span {
+			display: block;
+		}
+
+/* ==========
+	Global header styles
+========== */
+/* Referencing #wrapper to exclude the global/omni nav */
+#wrapper > header:nth-of-type(2) {
+	background: url('../images2/univ-menu-header-bg.png') no-repeat top center;
+		-webkit-background-size: 100% 100%;
+	height: 60px;
+	position: relative;
+}
+	.jcw #wrapper > header:nth-of-type(2) {
+		height: 97px;
+	}
+	.full-name #wrapper > header:nth-of-type(2) {
+		height: 78px;
+	}
+	.jcw #wrapper > header:nth-of-type(2) {
+		background: url('../images2/jcw-header-bg.png') no-repeat top center;
+			-webkit-background-size: 100% 100%;
+	}
+	#wrapper > header:nth-of-type(2) h3 {
+		color: #fff;
+		font-size: 22px;
+		font-weight: bold;
+		height: 60px;
+		line-height: 64px;
+		overflow: hidden;
+		position: absolute;
+		top: 0; left: 40px;
+		text-transform: uppercase;
+		width: 50%;
+	}
+		#wrapper > header:nth-of-type(2) h3.parent,
+		#wrapper > header:nth-of-type(2) h3.parent a {
+			color: #aaa;
+		}
+		#wrapper > header:nth-of-type(2) h3.current {
+			top: 0; left: 43.75%;
+			text-align: right;
+		}
+		.jcw #wrapper > header:nth-of-type(2) h3,
+		.full-name #wrapper > header:nth-of-type(2) h3 {
+			height: 97px;
+			line-height: 26px;
+			padding: 12px 0 0;
+		}
+			.full-name #wrapper > header:nth-of-type(2) h3 {
+				height: 78px;
+			}
+		.jcw #wrapper > header:nth-of-type(2) h3.parent,
+		.jcw #wrapper > header:nth-of-type(2) h3.parent a {
+			color: #fff;
+		}
+		.jcw #wrapper > header:nth-of-type(2) h3.current,
+		.full-name #wrapper > header:nth-of-type(2) h3.current {
+			height: 78px;
+			line-height: 82px;
+			padding: 0;
+		}
+			.jcw #wrapper > header:nth-of-type(2) h3.current {
+				color: #7eb3b0;
+			}
+			.jcw #wrapper > header:nth-of-type(2) h3 span,
+			.full-name #wrapper > header:nth-of-type(2) span {
+				display: block;
+				font-size: 16px;
+			}
+
+/* ==========
+	Basic Menus: Nav class, covers:
+		* Offers
+		* Owners
+		* Contact
+	menus.
+	Override with body class.
+========== */
+	nav.basic-menu ul li a {
+		background: url('../images2/gallery-glow-30.png') no-repeat 0 0, url('../images2/model-picker-nav-a-arrow_1024.png') no-repeat 585px center;
+			-webkit-background-size: auto auto, 15px 23px;
+		font-size: 30px;
+		font-weight: bold;
+		line-height: 38px;
+		padding: 40px 25% 40px 6.25%;
+	}
+		nav.basic-menu ul li:nth-of-type(1) a {
+			background: url('../images2/gallery-glow-30-first.png') no-repeat 0 0, url('../images2/model-picker-nav-a-arrow_1024.png') no-repeat 585px center;
+		}
+			nav.basic-menu ul li a > span {
+				color: #aaa;
+				display: block;
+				font-size: 22px;
+				font-family: 'TeXGyreHerosRegular', Arial, sans-serif;
+				line-height: 32px;
+				padding: 10px 0 0;
+			}
+	/* ==========
+		Basic Menus: Override for Contact & Owners (which feature icons)
+	========= */
+		.contact nav.basic-menu ul li a,
+		.owners nav.basic-menu ul li a {
+			background: url('../images2/model-picker-nav-a-arrow_1024.png') no-repeat 90.625% center;
+				-webkit-background-size: auto auto, 15px 23px, auto auto;
+			font-size: 26px;
+			height: 180px;
+			line-height: 180px;
+			padding: 0 0 0 34.375%;
+		}
+			/* ==========
+				Basic Menus: Icons
+			========= */
+			.contact nav.basic-menu ul li#customer-service a {
+				background: url('../images2/gallery-glow-30-first.png') no-repeat 0 0, url('../images2/model-picker-nav-a-arrow_1024.png') no-repeat 585px center, url('../images2/contact_custserv_icon.png') no-repeat 0 0;
+			}
+			.contact nav.basic-menu ul li#stay-in-the-loop a {
+				background: url('../images2/gallery-glow-30.png') no-repeat 0 0, url('../images2/model-picker-nav-a-arrow_1024.png') no-repeat 585px center, url('../images2/contact_stayinloop_icon.png') no-repeat 0 0;
+			}
+			.contact nav.basic-menu ul li#faqs a {
+				background: url('../images2/gallery-glow-30.png') no-repeat 0 0, url('../images2/model-picker-nav-a-arrow_1024.png') no-repeat 585px center, url('../images2/contact_faq_icon.png') no-repeat 0 0;
+			}
+			
+			.owners nav.basic-menu ul li#pay-your-bill a {
+				background: url('../images2/gallery-glow-30-first.png') no-repeat 0 0, url('../images2/model-picker-nav-a-arrow_1024.png') no-repeat 585px center, url('../images2/owners_paybill_icon.png') no-repeat 0 0;
+			}
+			.owners nav.basic-menu ul li#about-your-mini-videos a {
+				background: url('../images2/gallery-glow-30.png') no-repeat 0 0, url('../images2/model-picker-nav-a-arrow_1024.png') no-repeat 585px center, url('../images2/owners_videos_icon.png') no-repeat 0 0;
+			}
+			.owners nav.basic-menu ul li#download-apps a {
+				background: url('../images2/gallery-glow-30.png') no-repeat 0 0, url('../images2/model-picker-nav-a-arrow_1024.png') no-repeat 585px center, url('../images2/owners_download_icon.png') no-repeat 0 0;
+			}
+	
+	/* ==========
+		Basic Gallery Styles: Offers
+	========== */
+	.offers nav.basic-menu ul li a {
+			-webkit-background-size: auto auto, 20px 33px;
+	}
+	.offers nav.basic-menu ul li a span {
+		font-weight: normal;
+	}
+	
+/* ==========
+	Models/Trim page: Nav/menu
+========== */
+	.trim nav#models-menu ul li a { font-size: 32px; font-weight: bold; line-height: 40px; height: auto; text-transform: uppercase; }
+			.trim nav#models-menu ul li a ul {
+				padding: 10px 0 0;
+			}
+			.trim nav#models-menu ul li a ul li {
+				color: #aaa;
+				font-size: 22px;
+				font-weight: bold;
+				line-height: 30px;
+				text-transform: none;
+			}
+		.trim nav#models-menu > ul > li > a {
+				/* Background images applied in inline styles. Must match order */
+				-webkit-background-size: auto auto, 21px 33px, auto auto;
+			height: 180px;
+			padding: 50px 0 50px 310px;
+			text-indent: 0;
+		}
+				.trim nav#models-menu ul > li a ul li:nth-of-type(1) span { background: transparent; color: #fff; font-size: 24px; }
+/* ==========
+	Basic Gallery Styles: Trim
+========== */
+	.trim nav.galleries-menu ul li a > span {
+				-webkit-background-size: auto auto, 20px 33px, auto auto;
+		}
+
+/* ==========
+	Basic Content styles
+	Used on Privacy, Offer Details
+========== */
+#wrapper > section:nth-of-type(1) > img {
+	height: auto;
+	width: 100%;
+}
+
+section.content {
+	padding: 40px 0 0;
+}
+	section.content h2 {
+		color: #fff;
+		font-size: 30px;
+		margin: 0 6.25% 8px;
+	}
+	
+	section.content h3 {
+		color: #fff;
+		font-size: 22px;
+		line-height: 32px;
+		margin: 0 6.25%;
+	}
+	
+	section.content h4 {
+		color: #aaa;
+		font-size: 20px;
+		line-height: 30px;
+		margin: 0 6.25% 35px;
+	}
+	
+	section.content p {
+		color: #aaa;
+		font-size: 22px;
+		font-family: 'TeXGyreHerosRegular', Arial, sans-serif;
+		font-weight: normal;
+		line-height: 32px;
+		margin: 0 6.25% 40px;
+	}
+
+	/* ==========
+		Basic Content Styles: Override for Trim
+	========== */
+	.trim section.content h2,
+	.trim section.content h4,
+	.trim section.content p { margin: 0 6.25% 22px; }
+	.trim section.content h2 {
+		font-size: 30px;
+		line-height: 40px;
+		text-transform: uppercase;
+	}
+	.trim section.content h4 {
+		font-size: 20px;
+		line-height: 40px;
+		text-transform: uppercase;
+	}
+	.trim section.content p { font-size: 18px; line-height: 34px; }
+	
+	.stay-in-the-loop section.content h2 {
+		margin: 0 6.25% 22px;
+	}
+
+/* ==========
+	Expand/Collapse Styles
+	* Top Features
+	* FAQs
+========== */
+	.expand-collapse section#detail > section {
+		background: url('../images2/gallery-glow-30.png') no-repeat 0 0;
+		overflow: hidden;
+	}
+	.expand-collapse section#detail > section:nth-of-type(1) {
+		background: url('../images2/gallery-glow-30-first.png') no-repeat 0 0;
+	}
+	.expand-collapse section#detail > section.expanded > section {
+		background: url('../images2/gallery-glow-30-first.png') no-repeat 0 0;
+	}
+		.faqs section#detail,
+		.faqs section#detail > section.expanded > section,
+		.expand-collapse section#detail > section section.content {
+			background: none;
+			padding: 0;
+		}
+	.expand-collapse section#detail > section img {
+		display: none;
+		background: #000; /* Hide default bg image, except for top border portion, while loading */
+		height: auto;
+		width: 100%;
+	}
+	.expand-collapse section#detail > section a.title {
+		color: #fff;
+		display: block;
+		font-size: 22px;
+		font-weight: bold;
+		line-height: 30px;
+		text-transform: uppercase;
+		margin: 0 6.25% 0 0;
+		padding: 22px 0 20px 85px;
+		position: relative;
+	}
+		.expand-collapse-detail section#detail > section h3 {
+			color: #fff;
+			display: block;
+			font-size: 22px;
+			font-weight: bold;
+			line-height: 30px;
+			text-transform: uppercase;
+		}
+		.expand-collapse section#detail > section a.title span.plus {
+			position: absolute;
+			top: 25px; left: 40px;
+			background: url('../images2/plus.png') no-repeat;
+				-webkit-background-size: 22px 22px;
+			/*border: 2px solid #9a9a9a;*/
+			color: #9a9a9a;
+			display: block;
+			font-size: 23px;
+			font-weight: normal;
+			height: 22px;
+			line-height: 20px;
+			text-indent: -999px;
+			width: 22px;
+		}
+			.expand-collapse section#detail > section.expanded a.title span.plus {
+				/*display: none;*/
+				position: absolute;
+				top: 45px; left: 40px;
+				background: url('../images2/minus.png') no-repeat;
+					-webkit-background-size: 22px 22px;
+				/*border: 2px solid #9a9a9a;*/
+				font-size: 23px;
+				font-weight: normal;
+				height: 22px;
+				line-height: 16px;
+				text-indent: -999px;
+				width: 22px;
+			}
+	.expand-collapse section#detail > section p {
+		display: none;
+		line-height: 36px;
+		margin: 0 6.25% 20px 0;
+		padding: 0 40px 0 85px;
+	}
+	.expand-collapse section#detail > section a.more {
+		background: url('../images2/more-a-arrow_1024.png') no-repeat right 10px;
+			-webkit-background-size: 12px 17px;
+		display: none;
+		font-size: 22px;
+		font-weight: bold;
+		height: 30px;
+		line-height: 40px;
+		margin: 0 6.25% 26px 0;
+		padding: 0 22px 0 85px;
+		text-transform: uppercase;
+	}
+			.expand-collapse section#detail > section.expanded {
+				padding: 2px 0 0;
+			}
+			.expand-collapse section#detail > section.expanded img {
+				display: block;
+			}
+			.expand-collapse section#detail > section.expanded a.title,
+			.expand-collapse-detail section#detail > section.expanded h3 {
+				background: none;
+				color: #fff;
+				font-size: 30px;
+				line-height: 36px;
+				padding: 40px 0 20px 85px;
+			}
+				.expand-collapse-detail section#detail > section.expanded h3 { padding: 40px 40px 20px 85px; }
+			.expand-collapse section#detail > section.expanded p {
+				display: block;
+			}
+			.expand-collapse section#detail > section.expanded a.more {
+				display: inline-block;
+			}
+		
+/* ====================================================================================================================================================== */
+
+/* ==========
+	Home page: Promo/Hero space: In Device-specific at bottom
+========== */
+
+
+/* ==========
+	Home page: Nav/menu
+========== */
+	nav#home-menu ul li a {
+		background: url('../images2/nav-a-arrow_1024.png') no-repeat 91.40625% center, url('../images2/menu-glow-45.png') no-repeat 0 0;
+			-webkit-background-size: 15px 23px, 100% auto;	
+		font-size: 30px;
+		font-weight: bold;
+		height: 92px;
+		line-height: 94px;
+		text-indent: 6.25%;
+		text-transform: uppercase;
+		z-index: 1;
+	}
+		nav#home-menu ul li:nth-of-type(1) a {
+			background: url('../images2/nav-a-arrow_1024.png') no-repeat 91.40625% center, url('../images2/menu-glow-45-first.png') no-repeat 0 0;	
+		}
+		nav#home-menu ul li.dim a {
+			background: url('../images2/nav-a-arrow-dim_1024.png') no-repeat 91.40625% center, url('../images2/menu-glow-45.png') no-repeat 0 0;
+		}
+
+/* ==========
+	Models/Trim: Below Menu
+========== */
+.trim section#detail { /* eliminate space around img: */ line-height: 0; }
+	.trim section.content {
+		background: url('../images2/gallery-glow-30.png') no-repeat 0 0;
+		padding: 60px 0 20px;
+	}
+/* ==========
+	Models/Trim: Gallery Detail
+========== */
+.gallery section#detail > section.content {
+	background: none;
+}
+
+#imageMask {
+	background: #000;
+	height: 440px;
+	opacity: .25;
+	position: absolute;
+	top: 0; left: 0;
+	width: 640px;
+	z-index: 8;
+}
+	.colors section#detail > section:nth-of-type(1) #imageMask {
+		height: 405px;
+	}
+	.gallery section#detail > section#gallery-photo #imageMask img,
+	.colors section#detail > section:nth-of-type(1) #imageMask img {
+		display: block;
+		height: 100px;
+		margin: 170px auto;
+		width: 100px;
+	}
+
+.gallery section#detail > section#gallery-photo,
+.colors section#detail > section:nth-of-type(1) { height: 440px; overflow: hidden; position: relative; width: 640px; }
+	.gallery section#detail > section#gallery-photo img { width: 640px; height: 440px; }
+	.gallery section#detail > section#gallery-photo a {
+			-webkit-background-size: 50px 45px;
+		display: block;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		text-indent: -9999px;
+		width: 50%;
+		z-index: 9;
+	}
+		.gallery section#detail > section#gallery-photo a#prev { background: url('../images2/gallery-left-arrow_1024.png') no-repeat left center; left: 0; }
+		.gallery section#detail > section#gallery-photo a#next { background: url('../images2/gallery-right-arrow_1024.png') no-repeat right center; right: 0; }
+		
+	.gallery section#detail section.content > section { margin: 0 0 20px 6.25%; }
+		.gallery section#detail section.content > section a {
+			display: block;
+			float: left;
+			margin: 0 13px 13px 0;
+			position: relative;
+		}
+			.gallery section#detail section.content > section a.current {
+				border: 4px solid #fff;
+				height: 118px;
+				padding: 2px;
+				width: 118px;
+			}
+				.gallery section#detail section.content > section a.current img { display: none; }
+	
+/* ==========
+	Models/Trim: Car Detail
+	Models/Trim: Top Features: Detail
+========== */
+.detail section#detail { border-top: 2px solid #000; }
+	section#detail > img { height: auto; width: 100%; }
+	.detail section.content {
+		background: url('../images2/features-detail-header-bg.png') no-repeat 0 0;
+			-webkit-background-size: 100% auto;
+		border-top: 2px solid #000;
+		padding: 30px 0 0; /* We're undoing this subsequently; does it make sense to default this here? */
+	}
+		.offers section.content,
+		.stay-in-the-loop section.content,
+		.customer-service section.content,
+		.privacy section.content {
+			padding: 40px 0 0;
+		}
+
+/* ==========
+	Models/Trim: Car Detail
+========== */
+.car section#detail { padding-top: 330px; position: relative; }
+	.car section#detail img {
+		height: 360px;
+		width: 640px;
+		position: absolute;
+		top: 0; left: 0;
+	}
+	.car section.content h2 { font-size: 34px; margin: 0 6.25% 12px 6.25%; }
+		.car section.content > section {
+			height: 140px;
+			margin: 0 6.25%;
+			position: relative;
+		}
+			.car section.content > section ul { padding: 10px 0 0 0; }
+			.car section.content > section ul:nth-of-type(1) {
+				width: 60%;
+				position: absolute;
+				top: 0; left: 0;
+			}
+			.car section.content > section ul:nth-of-type(2) {
+				background: url('../images2/mpg-bg.png') no-repeat 0 0px;
+				padding: 10px 0 0 95px;
+				width: 100px;
+				position: absolute;
+				top: 0; right: 0;
+			}
+				.car section.content ul li {
+					color: #aaa;
+					font-size: 22px;
+					font-weight: bold;
+					line-height: 30px;
+				}
+					.car section.content ul:nth-of-type(2) li {
+						font-size: 20px;
+						font-family: 'TeXGyreHerosRegular', Arial, sans-serif;
+						font-weight: normal;
+					}
+					.car section.content ul li span {
+						color: #fff;
+						font-size: 24px;
+						font-weight: bold;
+					}
+/* ==========
+	Models/Trim: Top Features: Detail
+========== */
+.top-features.detail section.content h2 { line-height: 36px; margin: 0 6.25%; padding: 0; }
+.top-features.detail section.content h4 { line-height: 45px; margin: 0 6.25%; padding: 10px 0; }
+.top-features.detail section.content p { line-height: 36px; padding: 0; }
+
+section#prev-next {
+	height: 70px;
+	margin: 0 6.25% 70px;
+	position: relative;
+}
+	section#prev-next a {
+		border-width: 0 7px 0 7px;
+		-webkit-border-image: url('../images2/features-detail-btn.png') 0 7 0 7 stretch;
+		display: block;
+		font-size: 26px;
+		font-weight: bold;
+		height: 70px;
+		line-height: 70px;
+		text-align: center;
+		text-transform: uppercase;
+		width: 42.2%;
+	}
+		section#prev-next a span { margin: 0 auto; }
+		section#prev-next a#prev { position: absolute; top: 0; left: 0; }
+			section#prev-next a#prev span {
+				background: url('../images2/nav-a-arrow-left_1024.png') no-repeat center left;
+					-webkit-background-size: 15px 23px;
+				padding: 0 0 0 26px;
+			}
+		section#prev-next a#next { position: absolute; top: 0; right: 0; }
+			section#prev-next a#next span {
+				background: url('../images2/nav-a-arrow_1024.png') no-repeat center right;
+					-webkit-background-size: 15px 23px;
+				padding: 0 26px 0 0;
+			}
+
+/* ==========
+	Models/Trim: Full Spec
+========== */
+.full-specs section#detail {
+	background: url('../images2/gallery-glow-30-first.png') no-repeat 0 0;
+	padding: 40px 0 0;
+}
+	.full-specs section#detail nav:nth-of-type(1) ul {
+		font-size: 30px;
+		font-weight: bold;
+		height: 64px;
+	}
+		.full-specs section#detail nav:nth-of-type(1) ul li { float: left; text-align: center; }
+		.full-specs section#detail nav:nth-of-type(1) ul li:nth-of-type(1) {
+			background: url('../images2/full-specs-tab-inactive-bg.png') no-repeat 0 0;
+				-webkit-background-size: 100% 64px;
+			width: 50%;
+		}
+			.full-specs section#detail nav:nth-of-type(1) ul li:nth-of-type(1).active {
+				background: url('../images2/full-specs-tab-active-bg.png') no-repeat 0 0;
+			}
+			.full-specs section#detail nav:nth-of-type(1) ul li:nth-of-type(2).active {
+				background: url('../images2/full-specs-tab-active-bg-flip.png') no-repeat 0 0;
+			}
+		.full-specs section#detail nav:nth-of-type(1) ul li:nth-of-type(2) {
+			background: url('../images2/full-specs-tab-inactive-bg.png') no-repeat 0 0;
+				-webkit-background-size: 100% 64px;
+			width: 50%;
+		}
+			.full-specs section#detail nav:nth-of-type(1) ul li a {
+				background: none;
+				line-height: 50px;
+				padding: 14px 0 0;
+				text-transform: uppercase;
+			}
+	.full-specs section#detail section > h3 {
+		color: #fff;
+		font-size: 26px;
+		font-weight: bold;
+		line-height: 38px;
+		margin: 0 6.25%;
+		padding: 70px 0 14px;
+		text-transform: uppercase;
+	}
+		.full-specs section#detail section > h3:nth-of-type(1) {
+			padding: 56px 0 14px;
+		}
+	.full-specs section#detail section {
+		display: none;
+	}
+		.full-specs section#detail section.active {
+			display: block;
+		}
+	.full-specs section#detail section ul,
+	.full-feature-list section.content section#vehicle-specs ul {
+		border-bottom: 2px solid #222;
+		color: #aaa;
+		font-size: 22px;
+	}
+		.full-feature-list section.content section#vehicle-specs ul { border-bottom: 0; }
+	.full-specs section#detail section ul:last-of-type { border-bottom: 0; }
+		.full-specs section#detail section ul li { border-top: 2px solid #222; padding: 22px 0; }
+			.full-specs section#detail section ul li.linebreak { border: 0; }
+			.full-specs section#detail section ul li:nth-of-type(1) { border: 0; padding: 24px 0; }
+			.full-specs section#detail section > ul:last-child li:last-child { padding: 24px 0 44px; }
+			.full-specs section#detail ul li span,
+			.full-feature-list section.content section#vehicle-specs ul li span {
+				display: block;
+				float: left;
+				line-height: 30px;
+			}
+			.full-specs section#detail ul li span:nth-of-type(1),
+			.full-feature-list section.content section#vehicle-specs ul li span:nth-of-type(1) {
+				font-weight: bold;
+				padding: 0 6.25% 0 6.25%;
+				width: 22%;
+			}
+			.full-specs section#detail ul li span:nth-of-type(2),
+			.full-feature-list section.content section#vehicle-specs ul li span:nth-of-type(2) { padding: 0 6.25% 0 0; width: 57%; }
+
+/* ==========
+	Models/Trim: Full Feature List
+========== */
+	#msrp {
+		height: 193px;
+		position: relative;
+		width: 100%;
+	}
+		#msrp h2 {
+			color: #aaa;
+			font-size: 22px;
+			font-weight: bold;
+			position: absolute;
+			top: 45%; right: 6.25%;
+			z-index: 9;
+		}
+			#msrp h2 span { color: #fff; font-size: 40px; }
+		#msrp img {
+			height: 220px;
+			position: absolute;
+			top: 0; left: 0;
+			width: 100%;
+			z-index: 5;
+		}
+	.full-feature-list section.content {
+		/*background: url('../images2/nav-a-no-border-bg.png') no-repeat 0 0;*/
+			/* There's already a border from base style */
+		padding: 0; /* Undoing .detail section.content */
+	}
+		.full-feature-list section.content section:first-child { margin: 0 6.25%; }
+			.full-feature-list section.content h3 {
+				color: #999;
+				float: left;
+				font-size: 26px;
+				font-weight: bold;
+				line-height: 75px;
+				margin: 0; /* Undo global margin */
+				text-transform: uppercase;
+				width: 50%;
+			}
+				.full-feature-list section.content h3:last-child { text-align: right; }
+				.full-feature-list section.content section#vehicle-specs h3 {
+					margin: 0 6.25%;
+					width: auto;
+				}
+			.full-feature-list section.content h4 {
+				background: url('../images2/full-feature-list-heading-bg.png') no-repeat 0 0;
+					-webkit-background-size: 100% 76px;
+				color: #fff;
+				font-size: 22px;
+				margin: 0 0 22px;
+				padding: 22px 6.25%;
+			}
+		.full-feature-list section.content dl { margin: 0 6.25%; }
+			.full-feature-list section.content dl dt {
+				color: #fff;
+				font-size: 22px;
+				line-height: 30px;
+				font-weight: bold;
+				padding: 0 0 11px;
+			}
+				.full-feature-list section.content dl dt span { float: right; }
+				.full-feature-list section.content dl dd { border-bottom: 2px dotted #333333; margin: 0 0 22px 0; }
+				.full-feature-list section.content dl dd:last-child { border-bottom: none; }
+					.full-feature-list section.content dl dd ul {
+						color: #aaa;
+						list-style: disc;
+						padding: 0 5% 11px;
+					}
+						.full-feature-list section.content dl dd ul li {
+							font-size: 22px;
+							line-height: 30px;
+							padding: 6px 0;
+						}
+		.full-feature-list section.content > ul {
+			margin: 0 6.25%;
+		}
+			.full-feature-list section.content > ul > li {
+				border-bottom: 2px dotted #333333;
+				color: #aaa;
+				font-size: 22px;
+				line-height: 30px;
+				font-weight: bold;
+				margin: 0 0 22px 0;
+				padding: 0 80px 11px 0;
+				position: relative;
+			}
+	
+				.full-feature-list section.content section#vehicle-specs ul li
+				{
+					border-bottom: 2px dotted #333333;
+					margin: 0 0 22px 0;
+					padding: 0 0 22px;
+				}
+				.full-feature-list section.content > ul > li:last-child,
+				.full-feature-list section.content section#vehicle-specs ul li:last-child {
+					border-bottom: none;
+				}
+			.full-feature-list section.content > ul > li > span {
+				color: #fff;
+				float: right;
+				position: absolute;
+				top: 0; right: 0;
+				text-align: right;
+			}
+
+/* ==========
+	Device/Orientation targeting
+========== */
+#promo {
+	background: #000;
+	height: 460px;
+	position: relative;
+}
+	#promo-img {
+		background: url('../images2/iphone_horz_homepage_image.png') no-repeat top center;
+			-webkit-background-size: 100% auto;
+		display: block;
+		height: 460px;
+		position: absolute;
+		top: 0; left: 0;
+		text-indent: -9999px;
+		width: 640px;
+		z-index: 2;
+	}
+
+/* Portrait */ 
+@media screen and (orientation: portrait) 
+{ 
+	
+} 
+/* Landscape */
+@media screen and (orientation: landscape)
+{
+
+}
+
+/* Landscape + iPhone/Android */
+@media screen and (max-device-width: 640px) and (orientation:landscape) {
+    /* Landscape styles */
+}
+/* iPad default */
+@media screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+	#promo-img {
+		background: url('../images2/ipad_horz_homepage_image.png') no-repeat top center;
+		height: 768px;
+	}
+    .list section#detail > section a.title {
+		/*background: url('../images2/minus.png') no-repeat 5% 22px;*/
+	}
+}
+/* Landscape + iPad */
+@media screen and (max-device-width: 768px) and (orientation:landscape) {
+    /* Landscape styles */
+	#promo {
+
+	}
+}

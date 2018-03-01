@@ -1,0 +1,271 @@
+@charset "utf-8";
+
+#header {
+	-webkit-background-size: 100% 100px;
+	height: 100px;
+	position: relative;
+}
+a:link img, a:visited img {
+	border: none;
+}
+div.clearFloat {
+	clear: both;
+	font-size: 0;
+	height: 0;
+	line-height: 0px;
+}
+li.clearFloat {
+	clear: both;
+}
+ul.symbolList {
+	display: inline;
+	float: left;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.control_title {
+	color: #ff0000;
+}
+.breadcrumb {
+	color: #8f8f8f;
+}
+.AbsWrap {
+	position: relative;
+	width: 100%;
+}
+.rowWrap {
+	width: 100%;
+}
+#colwrap1 {
+	float: left;
+	margin-left: 0px;
+	margin-top: 0px;
+	width: 324px;
+}
+img.floatLeft { 
+    float: left; 
+    margin: 5px;
+	padding-right: 10px;
+}
+img.floatRight { 
+    float: right; 
+    margin: 5px; 
+}
+#title {
+	margin-left: 0px;
+	margin-top: 10px;
+	background-image: url(../images/title.jpg);
+	background-repeat:repeat-y;
+	overflow: hidden;
+	display: inline;
+	float: left;
+	margin-bottom: 0;
+	width: 320px;
+}
+#title_full {
+	margin-left: 0px;
+	margin-top: 10px;
+	background-image: url(../images/title_full.jpg);
+	background-repeat:repeat-y;
+	overflow: hidden;
+	display: inline;
+	float: left;
+	margin-bottom: 10px;
+	width: 620px;
+	padding-top: 0px;
+}
+html > body #title_full {
+	height: auto;
+	min-height: 34px;
+}
+.subtitle {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	font-style: italic;
+	font-weight: bold;
+	text-align: left;
+	color: #fff;
+	line-height: 32px;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	margin-left: 17px;
+	margin-top: 6px;
+	display: inline;
+	float: left;
+	margin-bottom: 0;
+}
+#content_L {
+	margin-left: 11px;
+	margin-top: 2px;
+	display: inline;
+	float: left;
+	margin-bottom: 0;
+	width: 313px;
+	padding-top: 0px;
+	height: 139px;
+}
+html > body #content_L {
+	height: auto;
+}
+.desc_L {
+	font-size: 24px;
+	font-weight: bold;
+	text-align: left;
+	color: #fff;
+	line-height: 30px;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	margin-left: 6px;
+	margin-top: 3px;
+	display: inline;
+	float: left;
+	margin-bottom: 0;
+}
+.desc_R {
+	font-size: 24px;
+	font-weight: bold;
+	text-align: left;
+	color: #fff;
+	line-height: 30px;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	margin-left: 3px;
+	margin-top: -1px;
+	display: inline;
+	float: left;
+	margin-bottom: 0;
+}
+#screenshot_L {
+	margin-right: 5px;
+	margin-top: 10px;
+	display: inline;
+	float: right;
+	margin-bottom: 0;
+
+}
+#screenshot_R {
+	margin-left: 5px;
+	margin-top: 10px;
+	overflow: hidden;
+	display: inline;
+	float: left;
+	margin-bottom: 0;
+	width: 290px;
+}
+#screenshot_full {
+	margin: auto;
+	display: block;
+}
+#content_full {
+	margin-left: 11px;
+	margin-top: 6px;
+	display: inline;
+	float: left;
+	margin-bottom: 0;
+	width: 610px;
+	padding-top: 0px;
+	height: 86px;
+}
+html > body #content_full {
+	height: auto;
+}
+.faq {
+	font-size: 22px;
+	font-style: italic;
+	font-weight: bold;
+	text-align: left;
+	color: #fff;
+	line-height: 30px;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	margin-left: 6px;
+	margin-top: 2px;
+	display: inline;
+	float: left;
+	margin-bottom: 0;
+}
+.plain {
+	font-size: 22px;
+	font-style: italic;
+	font-weight: bold;
+	text-align: left;
+	color: #fff;
+	line-height: 30px;
+}
+.plain_hint {
+	font-size: 22px;
+	font-style: italic;
+	font-weight: bold;
+	text-align: left;
+	color: #8f8f8f;
+	line-height: 30px;
+}
+.hint {
+	font-size: 20px;
+	font-style: italic;
+	font-weight: bold;
+	text-align: left;
+	color: #8f8f8f;
+	line-height: 24px;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	margin-left: 6px;
+	margin-top: 2px;
+	display: inline;
+	float: left;
+	margin-bottom: 0;
+}
+#content_R {
+	margin-right: 20px;
+	margin-top: 9px;
+	display: inline;
+	float: right;
+	margin-bottom: 0;
+	border: 1px solid #000;
+	width: 295px;
+	padding-top: 0px;
+	height: 107px;
+}
+html > body #content_R {
+	height: auto;
+	min-height: 106px;
+}
+#footer {
+	margin-left: 0px;
+	margin-top: 15px;
+	background-image: url(../images/footer.gif);
+	overflow: hidden;
+	display: inline;
+	float: left;
+	height: 38px;
+	margin-bottom: 0;
+	width: 640px;
+}
+#copyright {
+	margin-left: 0px;
+	margin-top: 14px;
+	display: inline;
+	float: left;
+	margin-bottom: 0;
+	width: 640px;
+	padding-top: 0px;
+	height: 39px;
+}
+html > body #copyright {
+	height: auto;
+	min-height: 40px;
+}
+.copyright {
+	font-size: 20px;
+	text-align: center;
+	color: #8f8f8f;
+	line-height: 30px;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	margin-left: 96px;
+	margin-top: 11px;
+	display: inline;
+	float: left;
+	margin-bottom: 0;
+}

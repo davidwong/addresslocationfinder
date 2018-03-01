@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>AddressLocationFinder Help - Preferences Screen</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/html5reset-1.6.1.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/help.css" />
+	<!--[if IE]>
+	<style type="text/css" media="all">.borderitem {border-style: solid;}</style>
+	<![endif]-->
+    <meta name="viewport" content="width=device-width">
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/iscroll-min.js"></script><script type="text/javascript">
+			var myScroll;
+			var a = 0;
+
+			isAndroid = false;
+			if(isAndroid) {
+					document.getElementById("home").className += " android";
+			}
+
+			function loaded() {
+				if(isAndroid) {
+					document.getElementById("home").className += " android";
+				}
+			}
+	</script>
+</head>
+
+<body class="trim"> 
+
+<section id="wrapper">
+	<header>
+		<img src="images/header.jpg" alt="" />
+  	</header>
+		<div class="clearFloat">8</div>
+            <div id="content_full">
+    	<div class="faq">
+    		<p><a href="index.html">Help</a> -> <span class="breadcrumb">App Preferences</span></p>
+    	</div>
+    </div>
+	<div id="colwrap1">
+		<div id="title">
+       	  <div class="subtitle">
+			
+				<p class="lastNode">Preferences Screen</p>
+			</div>
+		</div>
+		<div id="content_L">
+			<div class="desc_L">
+				
+					<p class="lastNode">The user configurable application preferences.</p>
+			</div>
+			<div class="clearFloat"></div>
+		<div class="hint">
+			
+				<p class="lastNode">Note: the preferences available may vary, depending on the version you have installed.</p>
+		</div>
+		<div class="clearFloat"></div>
+		</div>
+	</div>
+	<div id="screenshot_R">
+    	<img src="images/prefs-th.jpg" alt="App Preferences screen" />
+	</div>
+
+	<div class="clearFloat">1</div>
+	<div id="title_full">
+		<div class="subtitle">
+			
+				<p class="lastNode">Address Lookup</p>
+		</div>
+		<div class="clearFloat"></div>
+	</div>
+    	<div id="content_full">
+		<div class="faq">
+			
+				<p class="lastNode">Preferences to do with finding or locating an address.</p>
+		</div>
+		<div class="clearFloat"></div>
+	</div>
+	<div class="clearFloat">0</div>
+
+	<img src="images/prefs-show-map.jpg" id="screenshot_full" alt="Show Map Preference" />
+		<div class="clearFloat"></div>
+        
+	<div id="content_full">
+	  <div class="faq">
+		<p><span class="control_title">Show Map</span> - if set (default), when the address is located then the app will go to the built-in map. If not set, then the app will instead go to the Use Location screen.</p>
+
+	  </div>
+		<div class="clearFloat"></div>
+	</div>
+  <div id="content_full">
+	<div class="hint">
+	  <p class="lastNode">Hint: this preference can also be set with the radiobuttons in the initial address finder screen.</p>
+		</div>
+		<div class="clearFloat"></div>
+</div>
+<div class="clearFloat"></div>
+
+	<img src="images/prefs-pick-location.jpg" id="screenshot_full" alt="Pick Location Preference" />
+		<div class="clearFloat"></div>
+
+	<div id="content_full">
+	  <div class="faq">
+		<p><span class="control_title">Pick Location</span> - when the geocoding service locates an address, sometimes it will return more than one possible location. If set, this preferences will pop up a dialog with a list of several of these locations to choose from. If not set (default), the app will simply use what the geocoding service thinks is the 'best' location.</p>			
+	  </div>
+		<div class="clearFloat"></div>
+	</div>
+  
+<div class="clearFloat"></div>
+
+	<img src="images/prefs-contact-name.jpg" id="screenshot_full" alt="Contact Name Display Preference" />
+		<div class="clearFloat"></div>
+                 
+	<div id="content_full">
+	  <div class="faq">		
+			<p><span class="control_title">Contact Name Display</span> - This determines how your contact names are sorted for display in the Contacts screen. If set, the names will be sorted by surname. If not set (default), they will be displayed by first name.</p>
+	  </div>
+		<div class="clearFloat"></div>
+	</div>
+    
+    <div id="title_full">
+		<div class="subtitle">
+			
+				<p class="lastNode">Location Display</p>
+		</div>
+		<div class="clearFloat"></div>
+	</div>
+<div class="clearFloat"></div>
+
+    	<div id="content_full">
+		<div class="faq">
+			
+				<p class="lastNode">Preferences to do with how the address location (latitude and longitude) is displayed.</p>
+		</div>
+		<div class="clearFloat"></div>
+	</div>
+	<div class="clearFloat">0</div>
+    
+	<img src="images/prefs-lat-long-display.jpg" id="screenshot_full" alt="Latiitude/Longitude Display Preference" />
+		<div class="clearFloat"></div>
+        
+	<div id="content_full">
+		<div class="faq">
+			<p><span class="control_title">LAT/LONG Display</span> - this determines the format in which the address location is displayed in the app.</p>
+		</div>
+		<div class="clearFloat"></div>
+	</div>   
+    <div class="clearFloat"></div>
+    
+	<div id="content_full">
+		<div class="plain">
+			<img src="images/lat-long-dms.jpg" class="floatLeft" alt="Latitude/Longitude Degrees Minutes Seconds" />
+				<p class="lastNode">If set (default), the address location will be displayed as degrees, minutes and seconds.
+			</p>
+		</div>
+		<div class="clearFloat"></div>
+	</div>
+
+    <div id="content_full">
+			<div class="plain">
+<img src="images/lat-long-dd.jpg" class="floatLeft" alt="Latitude/Longitude decimal" />				
+					<p>If not set, the address is displayed in decimal format.</p>
+			</div>
+			<div class="clearFloat"></div>
+		</div>
+	</div>
+	<div class="clearFloat">7</div>
+  
+    <nav id="home-menu">
+        <ul id="home-menu-menu">
+            <li class="">
+            <a href="index.html">Back to Main Help</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="clearFloat"></div>
+      
+    <!-- Footer -->
+	<div id="footer">
+		<div class="copyright">
+				<p class="lastNode">Copyright 2011 David Wong, All Rights Reserved
+			</p>
+		</div>
+		<div class="clearFloat"></div>
+	</div>
+	<div class="clearFloat"></div>
+</div>
+</body>
+</html>
