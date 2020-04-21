@@ -1,0 +1,44 @@
+/*
+
+Bootstrap 4 grid tiers and media query breakpoints
+--------------------------------------------------
+
+xs = Extra small <576px
+Max container width None (auto)
+
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first". Note this doesn't use size infix, so by default will span half, e.g. defined like col-6.
+
+sm = Small ≥576px
+Max container width 540px
+
+Small devices (landscape phones, 576px and up)
+@media (min-width: 576px)
+
+md = Medium ≥768px
+Max container width 720px
+
+Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint
+@media (min-width: 768px)
+
+lg = Large ≥992px
+Max container width 960px
+
+Large devices (desktops, 992px and up)
+@media (min-width: 992px)
+
+xl = Extra large ≥1200px
+Max container width 1140px
+
+Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px)
+
+Test device pixel size and viewport
+-----------------------------------
+(from specs and https://www.mydevice.io)
+
+                 | Pixel Size  | Viewport   | Pixel Ratio
+Samsung S8         1440 x 2960   360 x 740    4
+Samsung Tab S4     1600 x 3560   712 x 1138   2.25
+
+*/
